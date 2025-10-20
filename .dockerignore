@@ -1,0 +1,10 @@
+haproxy/
+nginx/
+*.yaml
+*.pdf
+*.md
+LICENSE
+.env
+.venv
+Dockerfile*
+.*ignore
