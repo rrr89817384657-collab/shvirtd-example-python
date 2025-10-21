@@ -2,7 +2,7 @@ include:
   - proxy.yaml
 
 services:
-  web_python:
+  web:
     build:
       context: .
       dockerfile: Dockerfile.python
@@ -20,7 +20,7 @@ services:
       db-mysql:
         condition: service_healthy
 
-  db-mysql:
+  db:
     image: mysql:8
     container_name: db-mysql
     networks:
