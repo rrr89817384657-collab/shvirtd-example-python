@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ -d "/opt/example-python" ]; then
+    echo "Project already exists at /opt/example-python"
     cd /opt/example-python
-    git pull
 else
     sudo mkdir -p /opt
     sudo chown $USER:$USER /opt
