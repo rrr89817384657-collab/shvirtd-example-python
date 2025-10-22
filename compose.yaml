@@ -11,7 +11,7 @@ services:
       backend: 
         ipv4_address: 172.20.0.5
     environment:
-      DB_HOST: db-mysql
+      DB_HOST: db-mysql  # ← МЕНЯЕМ НА db
       DB_USER: ${MYSQL_USER}
       DB_PASSWORD: ${MYSQL_PASSWORD}
       DB_NAME: ${MYSQL_DATABASE}
