@@ -69,6 +69,8 @@ https://github.com/rrr89817384657-collab/shvirtd-example-python/tree/main
 
 https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/cron-task.sh
 
+* * * * * /optcron-task.sh
+
 ![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/z5.png)
 
 ## Задача 6
