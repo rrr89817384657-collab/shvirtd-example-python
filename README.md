@@ -58,6 +58,7 @@ https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/vulner
 6. Повторите SQL-запрос на сервере и приложите скриншот и ссылку на fork.
 
 ![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/005438.png)
+
 https://github.com/rrr89817384657-collab/shvirtd-example-python/tree/main
 
 ## Задача 5 (*)
@@ -67,6 +68,7 @@ https://github.com/rrr89817384657-collab/shvirtd-example-python/tree/main
 4. Предоставьте скрипт, cron-task и скриншот с несколькими резервными копиями в "/opt/backup"
 
 https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/cron-task.sh
+
 ![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/z5.png)
 
 ## Задача 6
@@ -74,6 +76,7 @@ https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/cron-t
 Предоставьте скриншоты  действий .
 
 ![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/6.png)
+
 ![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/6-dive.png)
 
 
