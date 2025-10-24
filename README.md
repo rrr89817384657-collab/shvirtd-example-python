@@ -1,30 +1,6 @@
 # Домашнее задание к занятию 5. «Практическое применение Docker»
 
-### Инструкция к выполнению
-
-1. Для выполнения заданий обязательно ознакомьтесь с [инструкцией](https://github.com/netology-code/devops-materials/blob/master/cloudwork.MD) по экономии облачных ресурсов. Это нужно, чтобы не расходовать средства, полученные в результате использования промокода.
-3. **Своё решение к задачам оформите в вашем GitHub репозитории.**
-4. В личном кабинете отправьте на проверку ссылку на .md-файл в вашем репозитории.
-5. Сопроводите ответ необходимыми скриншотами.
-
----
 ## Примечание: Ознакомьтесь со схемой виртуального стенда [по ссылке](https://github.com/netology-code/shvirtd-example-python/blob/main/schema.pdf)
-
----
-
-## Задача 0
-1. Убедитесь что у вас НЕ(!) установлен ```docker-compose```, для этого получите следующую ошибку от команды ```docker-compose --version```
-```
-Command 'docker-compose' not found, but can be installed with:
-
-sudo snap install docker          # version 24.0.5, or
-sudo apt  install docker-compose  # version 1.25.0-1
-
-See 'snap info docker' for additional versions.
-```
-В случае наличия установленного в системе ```docker-compose``` - удалите его.  
-2. Убедитесь что у вас УСТАНОВЛЕН ```docker compose```(без тире) версии не менее v2.24.X, для это выполните команду ```docker compose version```  
-###  **Своё решение к задачам оформите в вашем GitHub репозитории!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
 
 ---
 
@@ -39,10 +15,11 @@ See 'snap info docker' for additional versions.
    - Протестируйте корректность сборки 
 3. (Необязательная часть, *) Изучите инструкцию в проекте и запустите web-приложение без использования docker, с помощью venv. (Mysql БД можно запустить в docker run).
 4. (Необязательная часть, *) Изучите код приложения и добавьте управление названием таблицы через ENV переменную.
----
-### ВНИМАНИЕ!
-!!! В процессе последующего выполнения ДЗ НЕ изменяйте содержимое файлов в fork-репозитории! Ваша задача ДОБАВИТЬ 5 файлов: ```Dockerfile.python```, ```compose.yaml```, ```.gitignore```, ```.dockerignore```,```bash-скрипт```. Если вам понадобилось внести иные изменения в проект - вы что-то делаете неверно!
----
+
+
+https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/.dockerignore
+https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/Dockerfile.python
+
 
 ## Задача 2 (*)
 1. Создайте в yandex cloud container registry с именем "test" с помощью "yc tool" . [Инструкция](https://cloud.yandex.ru/ru/docs/container-registry/quickstart/?from=int-console-help)
@@ -50,6 +27,8 @@ See 'snap info docker' for additional versions.
 3. Соберите и залейте в него образ с python приложением из задания №1.
 4. Просканируйте образ на уязвимости.
 5. В качестве ответа приложите отчет сканирования.
+
+https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/vulnerabilities.csv
 
 ## Задача 3
 1. Изучите файл "proxy.yaml"
@@ -67,6 +46,8 @@ See 'snap info docker' for additional versions.
 
 6. Остановите проект. В качестве ответа приложите скриншот sql-запроса.
 
+ ![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/1.png](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/Z3.png)
+
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
 2. Подключитесь к Вм по ssh и установите docker.
@@ -75,23 +56,38 @@ See 'snap info docker' for additional versions.
 5. (Необязательная часть) Дополнительно настройте remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения ```docker ps -a```
 6. Повторите SQL-запрос на сервере и приложите скриншот и ссылку на fork.
 
+![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/005438.png)
+https://github.com/rrr89817384657-collab/shvirtd-example-python/tree/main
+
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
 2. Протестируйте ручной запуск
 3. Настройте выполнение скрипта раз в 1 минуту через cron, crontab или systemctl timer. Придумайте способ не светить логин/пароль в git!!
 4. Предоставьте скрипт, cron-task и скриншот с несколькими резервными копиями в "/opt/backup"
 
+https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/cron-task.sh
+![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/z5.png)
+
 ## Задача 6
 Скачайте docker образ ```hashicorp/terraform:latest``` и скопируйте бинарный файл ```/bin/terraform``` на свою локальную машину, используя dive и docker save.
 Предоставьте скриншоты  действий .
+
+![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/6.png)
+![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/6-dive.png)
+
 
 ## Задача 6.1
 Добейтесь аналогичного результата, используя docker cp.  
 Предоставьте скриншоты  действий .
 
+![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/docker-cp.png)
+
+
 ## Задача 6.2 (**)
 Предложите способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.  
 Предоставьте скриншоты  действий .
+
+![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/z6-2.png)
 
 ## Задача 7 (***)
 Запустите ваше python-приложение с помощью runC, не используя docker или containerd.  
