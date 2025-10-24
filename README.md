@@ -57,6 +57,8 @@ https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/vulner
 5. (Необязательная часть) Дополнительно настройте remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения ```docker ps -a```
 6. Повторите SQL-запрос на сервере и приложите скриншот и ссылку на fork.
 
+![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/011349.png)
+
 ![Image alt](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/005438.png)
 
 https://github.com/rrr89817384657-collab/shvirtd-example-python/tree/main
