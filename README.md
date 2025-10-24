@@ -18,6 +18,7 @@
 
 
 https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/.dockerignore
+
 https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/Dockerfile.python
 
 
@@ -46,7 +47,7 @@ https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/vulner
 
 6. Остановите проект. В качестве ответа приложите скриншот sql-запроса.
 
- ![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/1.png](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/Z3.png)
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/1.png](https://github.com/rrr89817384657-collab/shvirtd-example-python/blob/main/img/Z3.png)
 
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
